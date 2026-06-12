@@ -1638,23 +1638,47 @@ footer::before {
   }
 
   .proj-summary {
-    padding: 16px;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 18px;
+    gap: 12px;
   }
 
   .proj-card-num {
-    font-size: 1.4rem;
-    min-width: 32px;
+    display: none;
   }
 
   .proj-card-info {
-    flex: 1;
-    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .proj-card-nome {
+    font-size: 1.3rem;
+  }
+
+  .proj-card-desc {
+    font-size: 0.85rem;
+  }
+
+  .proj-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .proj-summary .status {
+    align-self: flex-start;
   }
 
   .proj-expandir {
     padding: 6px 10px;
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 8px;
   }
 
   .proj-detalhe {
